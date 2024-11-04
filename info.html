@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">About Us</a></li>
+                <li><a href="classes.html">Classes Offered</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Fit For Fun Fitness</h1>
+        <h3>Sign Up For A Course</h3>
+		<form  method="get" action="thankyou.html">
+			<label for="firstName">First Name:</label>
+			<input type="text" id="firstName" name="firstName" required><br>
+			<label for="lastName">Last Name:</label>
+			<input type="text" id="lastName" name="lastName" required><br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br>
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" ><br>
+			<label for="contactMethod">Best way to reach you:</label>
+			<select id="contactMethod" name="contactMethod" >
+				<option value="email">Email</option>
+				<option value="phone">Phone</option>
+				<option value="other">Other</option>
+			</select><br>
+			<fieldset>
+				<legend>Classes Offered:</legend>
+				<label><input type="checkbox" name="classes" value="cross-training">Cross Training</label>
+                <label><input type="checkbox" name="classes" value="sprint">Sprint</label>
+                <label><input type="checkbox" name="classes" value="spin">Spin</label>
+                <label><input type="checkbox" name="classes" value="bodypump">BodyPump</label>
+                <label><input type="checkbox" name="classes" value="bodycombat">BodyCombat</label>
+                <label><input type="checkbox" name="classes" value="step-interval">Step Interval</label>
+                <label><input type="checkbox" name="classes" value="advanced-cross-training">Advanced Cross Training</label>
+                <label><input type="checkbox" name="classes" value="mixxedfit">MixxedFIT</label>
+                <label><input type="checkbox" name="classes" value="zumba">Zumba</label>
+			</fieldset><br>
+			<fieldset>
+				<legend>Preferred Class Time:</legend>
+				<label><input type="radio" name="classTime" value="am">AM</label>
+                <label><input type="radio" name="classTime" value="pm">PM</label>
+            </fieldset><br>
+			<input class="submit" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
